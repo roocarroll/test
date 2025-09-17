@@ -1,0 +1,187 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f5ef; /* soft beige */
+  color: #2C1067;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  margin: 0 0 1rem 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2C1067;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #E98D26;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.navbar li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown a {
+  color: #2C1067;
+  display: block;
+  padding: 0.25rem 0.5rem;
+}
+
+.dropdown a:hover {
+  background: #FFD801;
+  color: #2C1067;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero {
+  background: #2C1067;
+  color: white;
+  padding: 6rem 2rem;
+}
+
+.btn {
+  background: #E98D26;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #FFD801;
+  color: #2C1067;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 2px solid #2C1067;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials */
+.testimonial-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background: white;
+  border: 2px solid #2C1067;
+  border-radius: 8px;
+  padding: 1rem;
+  scroll-snap-align: start;
+}
+
+/* Footer */
+.footer {
+  background: #2C1067;
+  color: white;
+  padding: 2rem;
+}
+
+/* Back to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #E98D26;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#backToTop .chevron {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#backToTop:hover {
+  background: #FFD801;
+  transform: translateY(-3px);
+}
+
+
+/* Logo styling */
+.logo img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footer-logo {
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: auto;
+  opacity: 0.9;
+}
